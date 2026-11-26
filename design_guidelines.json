@@ -1,0 +1,282 @@
+{
+  "project_name": "forshea.gen",
+  "tagline": "Your Personal AI Agent",
+  "archetype": "Organic Warm Minimalism (Apple-inspired Calm Editorial)",
+  "language": {
+    "primary": "id-ID",
+    "technical_terms": "en-US",
+    "locale_formatting": {
+      "currency": "IDR",
+      "currency_symbol": "Rp",
+      "date_format": "dd MMMM yyyy",
+      "time_format": "HH:mm WIB"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#FCFBF9",
+        "on_bg": "#252525",
+        "on_bg_muted": "#6E6961",
+        "roles": {
+          "border": "#E8E5E0",
+          "link": "#7C6348",
+          "brand": "#9B8264"
+        }
+      },
+      {
+        "name": "sidebar",
+        "kind": "solid",
+        "bg": "#F5F1EB",
+        "on_bg": "#252525",
+        "on_bg_muted": "#756F67",
+        "roles": {
+          "active_item_bg": "#E9E1D5",
+          "active_item_text": "#1F1D1A",
+          "border": "#E5DFD6"
+        }
+      },
+      {
+        "name": "card",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#252525",
+        "on_bg_muted": "#6E6961",
+        "roles": {
+          "border": "#EBE7E1",
+          "hover_border": "#D5CCA6",
+          "tag_bg": "#F4EFEA",
+          "tag_text": "#5A4E3E"
+        }
+      },
+      {
+        "name": "panel_warm",
+        "kind": "solid",
+        "bg": "#F8F5F0",
+        "on_bg": "#252525",
+        "on_bg_muted": "#6B655D",
+        "roles": {
+          "border": "#E8E3DC",
+          "accent_highlight": "#9B8264"
+        }
+      },
+      {
+        "name": "accent_chip",
+        "kind": "solid",
+        "bg": "#E9E1D5",
+        "on_bg": "#2D261E",
+        "on_bg_muted": "#5C5245",
+        "roles": {
+          "border": "#D9CEBF"
+        }
+      },
+      {
+        "name": "mock_badge",
+        "kind": "solid",
+        "bg": "#F3EBDD",
+        "on_bg": "#7A4D14",
+        "on_bg_muted": "#9A6520",
+        "roles": {
+          "border": "#E2D3B8",
+          "indicator_dot": "#C07616"
+        }
+      },
+      {
+        "name": "status_success",
+        "kind": "solid",
+        "bg": "#EEF5F0",
+        "on_bg": "#1C5B32",
+        "on_bg_muted": "#2F7347",
+        "roles": {
+          "border": "#D2E8D8"
+        }
+      },
+      {
+        "name": "dark_footer_or_modal_overlay",
+        "kind": "glass",
+        "contrast_against": "#181614",
+        "guarantee": "scrim: rgba(24, 22, 20, 0.75) with backdrop-blur-md",
+        "on_bg": "#FDFCFA",
+        "on_bg_muted": "#D6CFC7",
+        "roles": {
+          "link": "#E4D1BA",
+          "button_bg": "#9B8264",
+          "button_text": "#FFFFFF"
+        }
+      }
+    ],
+    "accent": "#9B8264",
+    "on_accent": "#FFFFFF",
+    "primary_beige": "#E9E1D5",
+    "on_primary_beige": "#252525",
+    "secondary_cream": "#F8F5F0",
+    "border_soft": "#E8E5E0",
+    "charcoal_text": "#252525"
+  },
+  "typography": {
+    "font_family_heading": "Outfit Variable, sans-serif",
+    "font_family_body": "Plus Jakarta Sans Variable, sans-serif",
+    "font_family_mono": "IBM Plex Mono, monospace",
+    "font_imports": [
+      "@fontsource-variable/outfit",
+      "@fontsource-variable/plus-jakarta-sans",
+      "@fontsource/ibm-plex-mono"
+    ],
+    "scale_px": {
+      "display": 52,
+      "h1": 40,
+      "h2": 30,
+      "h3": 22,
+      "h4": 18,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "h1_classes": "text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#252525]",
+      "h2_classes": "text-2xl sm:text-3xl font-semibold tracking-tight text-[#252525]",
+      "h3_classes": "text-xl sm:text-2xl font-medium tracking-tight text-[#252525]",
+      "h4_classes": "text-lg sm:text-xl font-medium text-[#252525]",
+      "body_classes": "text-base leading-relaxed text-[#252525]",
+      "caption_classes": "text-sm text-[#6E6961] tracking-normal",
+      "overline_classes": "text-xs font-semibold tracking-[0.18em] uppercase text-[#9B8264]"
+    }
+  },
+  "entry_surfaces": {
+    "/": "Personal AI Dashboard — Indonesian warm greeting, live WIB clock, quick-access agents grid, and recent Studio generation carousel",
+    "/studio": "AI Product Studio workspace — 8-step structured creative pipeline with multi-view photo slots, specs form, and live mock generator",
+    "/agents": "Modular AI Agents directory — dedicated cards for Product Studio, Daily, Finance, Learning, and Creative assistants",
+    "/workspace": "Personal assets vault — categorized tabs for Generated Images, Projects, Saved Files, History, and Favorites",
+    "/settings": "App & AI Engine configuration — profile, Indonesian locale options, API provider key setup, and mock mode status"
+  },
+  "grids_and_layouts": {
+    "shell": {
+      "type": "Sidebar + Main Content Canvas",
+      "sidebar_width": "w-64 xl:w-72",
+      "mobile_nav": "Collapsible Sheet drawer with clean hamburger trigger and tactile bottom bar on phones",
+      "header_height": "h-16",
+      "header_style": "backdrop-blur-md bg-[#FCFBF9]/90 border-b border-[#E8E5E0] sticky top-0 z-40 px-6 flex items-center justify-between"
+    },
+    "dashboard_grid": {
+      "layout": "High-density editorial Bento grid with asymmetrical summary widgets",
+      "container": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6 lg:p-8 max-w-7xl mx-auto",
+      "cards": {
+        "welcome_hero": "col-span-full md:col-span-8 bg-[#F8F5F0] border border-[#E8E3DC] rounded-2xl p-6 lg:p-8 shadow-sm",
+        "daily_stats": "col-span-full md:col-span-4 bg-[#FFFFFF] border border-[#EBE7E1] rounded-2xl p-6 shadow-sm",
+        "quick_agents": "col-span-full md:col-span-12 lg:col-span-8 bg-[#FFFFFF] border border-[#EBE7E1] rounded-2xl p-6 shadow-sm",
+        "quick_assistant_prompt": "col-span-full md:col-span-12 lg:col-span-4 bg-[#F5F1EB] border border-[#E5DFD6] rounded-2xl p-6 shadow-sm",
+        "recent_creations": "col-span-full bg-[#FFFFFF] border border-[#EBE7E1] rounded-2xl p-6 shadow-sm"
+      }
+    },
+    "studio_workflow_grid": {
+      "layout": "Progressive 8-step studio wizard with sticky right-hand summary inspector",
+      "container": "grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 lg:p-8 max-w-7xl mx-auto",
+      "main_stepper": "lg:col-span-8 space-y-8",
+      "live_inspector": "lg:col-span-4 space-y-6 lg:sticky lg:top-24 h-fit"
+    }
+  },
+  "image_urls": {
+    "baby_clothing_mockups": [
+      {
+        "url": "https://images.unsplash.com/photo-1622290319146-7b63df48a635?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxiYWJ5JTIwY2xvdGhpbmclMjBwcm9kdWN0JTIwbW9ja3VwfGVufDB8fHx8MTc5NTY5NTU0MXww&ixlib=rb-4.1.0&q=85",
+        "category": "Baby Clothing / Baby Essentials",
+        "description": "Clean flat-lay baby bodysuit with warm neutral pastel toys",
+        "use_case": "Preset template preview for Baby Minimalist style & sample uploaded slot"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1622290291720-ac961c43ee30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxiYWJ5JTIwY2xvdGhpbmclMjBwcm9kdWN0JTIwbW9ja3VwfGVufDB8fHx8MTc5NTY5NTU0MXww&ixlib=rb-4.1.0&q=85",
+        "category": "Baby Essentials / Soft Pastel",
+        "description": "Soft beige tones baby shirt mockup with pastel nursery accents",
+        "use_case": "Gallery seed result & preset thumbnail for Soft Pastel Nursery"
+      }
+    ],
+    "fashion_studio": [
+      {
+        "url": "https://images.unsplash.com/photo-1612731486606-2614b4d74921?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsJTIwZmFzaGlvbiUyMHN0dWRpbyUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc5NTY5NTU0MXww&ixlib=rb-4.1.0&q=85",
+        "category": "Women's Fashion / Modern Commercial",
+        "description": "Editorial warm tan studio wall with sunlight shadow and tailored fashion",
+        "use_case": "Fashion style preset & Studio hero generated showcase"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxtaW5pbWFsJTIwZmFzaGlvbiUyMHN0dWRpbyUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc5NTY5NTU0MXww&ixlib=rb-4.1.0&q=85",
+        "category": "Fashion Accessories / High Fashion Minimal",
+        "description": "Monochrome clean studio high fashion composition",
+        "use_case": "Clean White Studio preset thumbnail & result gallery item"
+      }
+    ],
+    "home_and_decor": [
+      {
+        "url": "https://images.unsplash.com/photo-1610128361323-6e941c97f023?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBjZXJhbWljJTIwaG9tZSUyMGRlY29yJTIwc3R1ZGlvfGVufDB8fHx8MTc5NTY5NTU0MXww&ixlib=rb-4.1.0&q=85",
+        "category": "Home & Living / Natural Lifestyle",
+        "description": "Artisanal ceramic tableware on natural warm wood with dried lavender",
+        "use_case": "Natural Lifestyle preset thumbnail & Home Decor studio gallery result"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1660721671073-e139688fa3cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjZXJhbWljJTIwaG9tZSUyMGRlY29yJTIwc3R1ZGlvfGVufDB8fHx8MTc5NTY5NTU0MXww&ixlib=rb-4.1.0&q=85",
+        "category": "Home & Living / Luxury Brown Pedestal",
+        "description": "Modern sculptural ceramic vases on fluted wooden podium",
+        "use_case": "Luxury Brown preset thumbnail & comparison view example"
+      }
+    ]
+  },
+  "component_structure": {
+    "layout_components": [
+      "frontend/src/components/layout/AppShell.tsx (Main layout with responsive warm sidebar, topbar, and Indonesian greeting bar)",
+      "frontend/src/components/layout/Sidebar.tsx (Nav items for Dashboard, AI Agents, My Workspace, Settings with badge counters)",
+      "frontend/src/components/layout/Header.tsx (WIB Clock, search bar, active agent badge, Mock indicator, notifications)"
+    ],
+    "dashboard_components": [
+      "frontend/src/components/dashboard/WelcomeBanner.tsx (Warm personalized greeting in Indonesian, date/time badge, quick agent triggers)",
+      "frontend/src/components/dashboard/QuickAgentGrid.tsx (Cards for the 5 agents with status, icons, and one-click launch)",
+      "frontend/src/components/dashboard/RecentCreationsCarousel.tsx (Recently generated product shots with quick download/zoom)",
+      "frontend/src/components/dashboard/DailyProductivitySummary.tsx (Activity stats: photos generated, tokens saved, projects active)",
+      "frontend/src/components/dashboard/MiniPromptAssistant.tsx (Instant input bar to prompt forshea.gen directly from dashboard)"
+    ],
+    "studio_components": [
+      "frontend/src/components/studio/StudioStepper.tsx (Visual step indicator: Kategori → Upload Foto → Spesifikasi → Gaya → Latar & Suasana → Jumlah → Generate)",
+      "frontend/src/components/studio/CategorySelector.tsx (6 categories with icons and sample tags)",
+      "frontend/src/components/studio/StructuredUploadGrid.tsx (Dedicated upload cards: Depan/Front, Samping/Side, Atas/Top, Bawah/Base, Detail/Close-up + Referensi)",
+      "frontend/src/components/studio/ProductSpecForm.tsx (Structured specs: Nama, Jenis, Bahan, Warna Utama, Warna Sekunder, Motif, Dimensi, Karakteristik Khusus + SOURCE OF TRUTH Callout)",
+      "frontend/src/components/studio/StyleSelector.tsx (Visual cards for category-scoped photography styles: Flat Lay Minimal, Ghost Mannequin, On-Model Editorial, Podium Studio, Sunlight Aesthetic)",
+      "frontend/src/components/studio/ScenePresetCustomizer.tsx (6 Presets: Beige Minimalist, Clean White Studio, Luxury Brown, Soft Pastel, Natural Lifestyle, Modern Commercial + Custom Prompt)",
+      "frontend/src/components/studio/GenerationInspector.tsx (Sticky live preview card showing summary of chosen specs before generating)",
+      "frontend/src/components/studio/ProcessingState.tsx (Calm, step-by-step progress animation with mock generation status timer)",
+      "frontend/src/components/studio/ResultGallery.tsx (Image grid with fullscreen modal, split original-vs-generated comparison slider, favorite, download JPG/PNG, and save-to-project modal)"
+    ],
+    "agents_directory_components": [
+      "frontend/src/components/agents/AgentDirectory.tsx (All 5 agents: AI Product Studio [Active], Daily Assistant [Productivity], Finance Assistant [IDR budgeting], Learning Assistant, Creative Assistant)",
+      "frontend/src/components/agents/AgentWorkspaceModal.tsx (Interactive sandbox drawer for each agent with realistic chat/action flows)"
+    ],
+    "workspace_components": [
+      "frontend/src/components/workspace/WorkspaceTabs.tsx (Filter tabs: Galeri Hasil, Proyek Saya, File Terunggah, Riwayat Aktivitas, Favorit)",
+      "frontend/src/components/workspace/ProjectFolderManager.tsx (Organize product shots into collections e.g. 'Koleksi Lebaran 2026', 'Katalog Bayi Katun')"
+    ],
+    "settings_components": [
+      "frontend/src/components/settings/ProfileSettings.tsx (Owner name, Indonesian timezone, avatar, role)",
+      "frontend/src/components/settings/AIProviderConfig.tsx (OpenAI/Replicate/Custom API key fields with live test connection button & clear DEMO / MOCK status badge)",
+      "frontend/src/components/settings/PreferenceSettings.tsx (Language toggle ID/EN, default generation quality, storage options)"
+    ]
+  },
+  "motion": {
+    "transitions": "transition-colors duration-200 ease-out, transition-opacity duration-200 ease-out, transition-transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+    "rules": "Never apply transition: all. Avoid layout shifts. Use Motion/React for card entrance and modal backdrops.",
+    "hover_lift": "hover:-translate-y-0.5 hover:shadow-md transition-transform duration-200",
+    "stagger_delay": "stagger direct children by 0.05s on grid mount"
+  },
+  "accessibility": {
+    "wcag_target": "WCAG AA (4.5:1 text contrast on all surfaces)",
+    "focus_states": "focus-visible:ring-2 focus-visible:ring-[#9B8264] focus-visible:ring-offset-2 outline-none",
+    "test_attributes": "All buttons, inputs, tabs, modal triggers, and result items MUST include semantic data-testid in kebab-case (e.g. data-testid='generate-studio-btn', data-testid='upload-slot-front', data-testid='spec-product-name-input')"
+  },
+  "instructions_to_main_agent": [
+    "1. PALETTE & AESTHETIC: Strictly adhere to the requested Warm Beige (#E9E1D5), Cream (#F8F5F0), Muted Brown Accent (#9B8264), Charcoal Text (#252525), and Off-white canvas (#FCFBF9). Do not use pure black (#000000) or cold blue gradients. The app should feel like a bespoke, luxury Apple-standard personal tool for an Indonesian creator/entrepreneur.",
+    "2. LANGUAGE & LOCALIZATION: Use natural Indonesian for all primary navigation, greetings, studio steps, spec helpers, and workspace tabs (e.g. 'Studio Produk AI', 'Ruang Kerja Saya', 'Pengaturan Agen', 'Kategori Produk', 'Unggah Foto Asli', 'Sumber Kebenaran Spesifikasi'). Keep English for product style names and technical AI keys where appropriate.",
+    "3. TIMEZONE & GREETING: Display Indonesian time (WIB - Waktu Indonesia Barat) and contextual greetings: 'Selamat Pagi' / 'Selamat Siang' / 'Selamat Sore' / 'Selamat Malam' based on current hour.",
+    "4. AI PRODUCT STUDIO (MAIN FEATURE): Build a polished, rich 8-step generator. 1) Category selector (6 categories); 2) Multi-slot upload grid (Front, Side, Top, Bottom, Detail, Lighting reference) with drag-drop or file selection simulation + image previews; 3) Product Spec Form with dedicated 'SOURCE OF TRUTH' explanatory card; 4) Photography Style picker with visual thumbnail cards; 5) Scene customizer with 6 presets + prompt input; 6) Quantity selector (1, 2, 4, 8); 7) Generate button with live mock simulation (realistic 2.5s progress bar with simulated steps: 'Menganalisis sudut foto...', 'Menyesuaikan pencahayaan...', 'Merender tekstur...'); 8) Rich result gallery with image zoom, original-vs-generated comparison slider, download, favorite, delete, and add to project folder.",
+    "5. MOCK MODE BY DEFAULT: Unless user inputs a custom API key in Settings, the app operates in full, high-fidelity DEMO / MOCK mode with persistent local state (localStorage + backend motor db). Clearly display a neat 'DEMO MOCK MODE' chip on studio results and settings so the user is aware.",
+    "6. 5 MODULAR AI AGENTS: Include the full directory of 5 agents (AI Product Studio, Daily Assistant, Finance Assistant with IDR calculator, Learning Assistant, Creative Assistant). Each has its own dedicated workspace drawer/tab with interactive simulated capabilities.",
+    "7. MY WORKSPACE & SETTINGS: Provide complete workspace organization (filter generated images, create projects, view history) and Settings (API key configuration, profile, theme).",
+    "8. TESTING: Ensure EVERY button, tab, input, select, and modal has explicit data-testid attributes."
+  ]
+}
